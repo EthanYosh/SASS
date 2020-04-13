@@ -1,0 +1,115 @@
+*, *::before,*::after {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+  }
+  
+  html {
+    font-size: 82.5%; /* good practice because makes math easier when using rem*/
+  }
+
+  h1 {
+      text-align: center;
+  }
+  
+  
+  body {
+    padding: 50px;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #00FFFF, purple);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* fixed doesnt scroll with the page, local will scroll with page contents, scroll is default and will scroll with the page */
+    background-position: center;
+    justify-content: center;
+  
+  }
+
+  button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI',sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    color: white;
+    background-color: rgb(130, 53, 202);
+  }
+
+  input {
+    margin: 15px;
+  }
+
+
+  .firstForm
+  {
+      display: block;
+      text-align: center;
+  }
+
+
+  form
+  {
+      max-width: 549px;
+      display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color: purple;
+    color: white;
+    width: 80px;
+    height: 30px;
+  }
+
+
+  input[type=radio] {
+    font-weight: normal;
+  }
+
+  input[type=text] {
+    margin: auto;
+  }
+
+  .footer {
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: cyan;
+    text-align: center;
+  }
+
+  @media (min-width: 550px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  
+  @media (min-width: 768px){
+    body{
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  
+  @media (min-width: 1024px){
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .firstForm {
+        margin-right: 0;
+        margin-left: 0;
+    }
+  }

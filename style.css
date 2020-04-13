@@ -1,0 +1,203 @@
+*, *::before,*::after {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+html {
+  margin: auto;
+  justify-content: center;
+  font-size: 82.5%; /* good practice because makes math easier when using rem*/
+}
+
+
+body {
+  padding: 25px;
+  margin: 25px;
+  background-image: linear-gradient(to bottom, #00FFFF, purple);
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* fixed doesnt scroll with the page, local will scroll with page contents, scroll is default and will scroll with the page */
+  background-position: center;
+  justify-content: center;
+
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  margin: auto;
+  border-style: double;
+  border-color: black;
+  border-width: 1px;
+  width: 90%;
+}
+
+img {
+  border-radius: 30%;
+  padding: 30px;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: cyan;
+  text-align: center;
+}
+
+.entirePage {
+  align-content: center;
+  text-align: center;
+}
+
+
+button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 5px;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI',sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(130, 53, 202);
+}
+
+li {
+  padding: 50px;
+  border: 3px double purple;
+  margin: 60px;
+  background-color: rgb(141, 58, 219, 0.2);
+}
+
+.floatsPortion6, .floatsPortion5, .floatsPortion4, .floatsPortion3, .floatsPortion2 {
+  width: 100%;
+}
+
+.floatsPortion1 {
+  width: 1300px;
+}
+
+.articleList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border: 5px double black;
+  padding: 10px;
+  margin: 75px;
+}
+
+.articleList p, h1, h3 {
+  padding: 20;
+}
+
+
+.hellocssPortion, .boxmodelPortion {
+  padding: 10px;
+  justify-content: center;
+}
+
+
+.textAll {
+  text-align: center;
+}
+
+.resumeImages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.textAll > h2 {
+  font-size: 15px;
+  font-style: italic;
+}
+
+
+
+
+.aBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+.resumeText p {
+  text-align: left;
+}
+
+
+.resumeText button {
+  color: magenta;
+}
+
+.resumeText button:hover {
+  background-color: magenta;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+
+@media (min-width: 550px){
+body{
+    width: 767px;
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+  width: 32px;
+  height: 32px;
+}
+}
+
+@media (min-width: 768px){
+body{
+    width: 1023px;
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+  width: 64px;
+  height: 64px;
+}
+}
+
+@media (min-width: 1024px){
+body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    width: auto;
+}
+}
